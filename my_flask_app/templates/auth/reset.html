@@ -1,0 +1,16 @@
+{% extends "base/base.html" %}
+{% block page_content %}
+
+<div class="row">
+    <div class="col-md-6 col-md-offset-3">
+        <div class="form-group">
+            <form action="{{ url_for('auth.reset') }}" method="POST">
+                {{ form.email.label }}: {{ form.email }}<br>
+                {{ form.csrf_token }}
+                <input type="submit" value="Reset my password" />
+            </form>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,16 @@
+{% extends 'admin/master.html' %}
+
+{% block head_css %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}" type="text/css">
+    <link href="{{ admin_static.url(filename='admin/css/bootstrap3/admin.css', v='1.1.1') }}" rel="stylesheet">
+    <style>
+    body {
+        padding-top: 4px;
+    }
+    </style>
+{% endblock %}
+
+{% block body %}
+{{ super () }}
+<a href="{{ url_for('base.index') }}" class="btn btn-primary">Back to Application Home</a>
+{% endblock %}

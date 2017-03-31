@@ -1,0 +1,14 @@
+testing:
+  secret_key: sOmEkEy
+  debug: True
+  teardown_commit: True
+
+development:
+  secret_key: sOmEoThErKeY
+  debug: True
+  teardown_commit: True
+
+production:
+  secret_key: somethingElse
+  debug: False
+  teardown_commit: True

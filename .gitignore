@@ -1,0 +1,10 @@
+/.idea
+
+config/*.yml
+
+__pycache__
+*.pyc
+
+base.db
+
+alembic.ini

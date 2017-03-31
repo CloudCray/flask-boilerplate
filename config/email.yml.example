@@ -1,0 +1,23 @@
+testing:
+  server: smpt.outserverexample.com
+  port: 80
+  username: myaddress@mydomain.com
+  password:
+  prefix: "[subject prefix]"
+  sender: Sender Name <myaddress@mydomain.com>
+
+development:
+  server: smpt.outserverexample.com
+  port: 80
+  username: myaddress@mydomain.com
+  password:
+  prefix: "[subject prefix]"
+  sender: Sender Name <myaddress@mydomain.com>
+
+production:
+  server: smpt.outserverexample.com
+  port: 80
+  username: myaddress@mydomain.com
+  password:
+  prefix: "[subject prefix]"
+  sender: Sender Name <myaddress@mydomain.com>

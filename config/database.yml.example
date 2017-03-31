@@ -1,0 +1,24 @@
+testing:
+  driver: sqlite
+  user:
+  password:
+  server:
+  database: base.db
+
+development:
+  driver: postgresql+psycopg2
+  user: postgres
+  password:
+  server: localhost
+  database: postgres
+
+production:
+  driver: postgresql+psycopg2
+  user: db_admin_user
+  password:
+  server: server.hostname.com
+  database: database_name
+  ssl_require: true
+  ssl_root_cert: /path/to/ca.crt
+  ssl_key: /path/to/key.key
+  ssl_cert: /path/to/cert.crt
