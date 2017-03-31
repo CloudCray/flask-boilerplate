@@ -10,7 +10,6 @@ Cloud Cray
     <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}" type="text/css">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/pe-icon-7-stroke.css') }}" type="text/css">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/font-awesome.css') }}" type="text/css">
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/jquery.json-viewer.css') }}" type="text/css">
 {% endblock %}
 
 {% block head %}
@@ -43,14 +42,14 @@ Cloud Cray
       </button>
       <a class="navbar-brand" href="{{ url_for('base.index') }}"><i class="fa fa-cloud"></i> home</a>
       <ul class="nav navbar-nav">
-                <li>All Pages Placeholder</li>
+          <li><a href="#">All Pages Placeholder</a></li>
           {% if current_user.is_authenticated %}
-                <li>User Placeholder</li>
+                <li><a href="#">User Placeholder</a></li>
             {% if current_user.is_admin() %}
-                <li>Admin Placeholder</li>
+                <li><a href="#">Admin Placeholder</a></li>
             {% endif %}
           {% else %}
-                <li>Anonymous Placeholder</li>
+                <li><a href="#">Anonymous Placeholder</a></li>
           {% endif %}
       </ul>
     </div>
