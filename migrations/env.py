@@ -59,9 +59,9 @@ def run_migrations_online():
     and associate a connection with the context.
 
     """
-    from patientprice import create_app, db
+    from my_flask_app import create_app, db
 
-    app = create_app("development")
+    app = create_app("testing")
 
     with app.app_context():
 

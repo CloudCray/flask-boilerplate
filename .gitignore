@@ -8,3 +8,5 @@ __pycache__
 base.db
 
 alembic.ini
+
+node_modules/
