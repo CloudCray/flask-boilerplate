@@ -1,6 +1,7 @@
 /.idea
 
 config/*.yml
+config/env
 
 __pycache__
 *.pyc

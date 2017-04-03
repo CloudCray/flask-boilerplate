@@ -6,8 +6,14 @@
 </title>
 
 {% block styles %}
+<<<<<<< HEAD
     <link rel="stylesheet" href="{{ url_for('static', filename='css/app.css') }}" type="text/css">
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans">
+=======
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}" type="text/css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/pe-icon-7-stroke.css') }}" type="text/css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/font-awesome.css') }}" type="text/css">
+>>>>>>> 645c4dca1a53606c26496bbb41c9cf67a70936c0
 {% endblock %}
 
 {% block head %}
@@ -24,6 +30,52 @@
 {% block body %}
 <body>
 <div class="wrapper">
+<<<<<<< HEAD
+=======
+{% block navbar %}
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigation-example-2">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="{{ url_for('base.index') }}"><i class="fa fa-cloud"></i> home</a>
+      <ul class="nav navbar-nav">
+          <li><a href="#">All Pages Placeholder</a></li>
+          {% if current_user.is_authenticated %}
+                <li><a href="#">User Placeholder</a></li>
+            {% if current_user.is_admin() %}
+                <li><a href="#">Admin Placeholder</a></li>
+            {% endif %}
+          {% else %}
+                <li><a href="#">Anonymous Placeholder</a></li>
+          {% endif %}
+      </ul>
+    </div>
+
+<!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse">
+        <ul class="nav navbar-nav">
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          {% if current_user.is_authenticated %}
+            <li><a href="{{ url_for('auth.logout') }}">Logout</a></li>
+            {% if current_user.is_admin() %}
+              <li><a href="{{ url_for('admin.index') }}"><span class="label label-info">admin</span></a></li>
+            {% endif %}
+          {% else %}
+              <li><a href="{{ url_for('auth.login') }}">Login</a></li>
+          {% endif %}
+        </ul>
+      </div>
+  </div><!-- /.container-->
+</nav>
+{% endblock %}
+>>>>>>> 645c4dca1a53606c26496bbb41c9cf67a70936c0
 
 {% block content %}
     <div class="main">

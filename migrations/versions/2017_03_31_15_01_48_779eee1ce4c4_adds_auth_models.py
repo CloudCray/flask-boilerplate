@@ -48,4 +48,8 @@ def downgrade():
     op.drop_table('roles_users')
     op.drop_table('user')
     op.drop_table('role')
+<<<<<<< HEAD
     # ### end Alembic commands ###
+=======
+    # ### end Alembic commands ###
+>>>>>>> 645c4dca1a53606c26496bbb41c9cf67a70936c0
